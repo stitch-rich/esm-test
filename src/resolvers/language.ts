@@ -1,8 +1,9 @@
+import { franc } from 'franc';
 import { DocumentNode } from 'graphql';
-import gql from 'graphql-tag';
+import {gql} from 'graphql-tag';
 
 // HELPERS
-import { Resolver } from './_baseResolver';
+import { Resolver } from './_baseResolver.js';
 
 
 interface QueryInterface {
@@ -21,7 +22,7 @@ class LanguageResolver extends Resolver {
   query: QueryInterface = {
    speak: (_, { text }) => ({
       message: text,
-      language: 'en-GB'
+      language: franc(text)
   })
   };
 

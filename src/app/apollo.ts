@@ -1,10 +1,10 @@
 import { ApolloServer } from '@apollo/server';
 
-import { Language } from '../resolvers/language';
+import { Language } from '../resolvers/language.js';
 
 // Schema definitions for queries and mutations
-import { mutation as mutationSchema } from '../schema/mutation';
-import { query as querySchema } from '../schema/query';
+import { mutation as mutationSchema } from '../schema/mutation.js';
+import { query as querySchema } from '../schema/query.js';
 
 const allResolvers = [
   Language

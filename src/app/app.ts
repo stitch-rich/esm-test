@@ -4,10 +4,9 @@ import compression from 'compression';
 import cors from 'cors';
 import express from 'express';
 import helmet from 'helmet';
-import { parseInt, set } from 'lodash';
-
-import { Apollo } from './apollo';
-import { metaInformation } from './meta';
+import {parseInt} from 'lodash-es';
+import { Apollo } from './apollo.js';
+import { metaInformation } from './meta.js';
 
 export async function startServer() {
   await Apollo.start();
