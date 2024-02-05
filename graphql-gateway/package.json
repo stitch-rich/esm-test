@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "start": "nodemon -r dotenv/config src/server.ts dotenv_config_path=.env.development",
+    "start": "nodemon --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' -r dotenv/config src/server.ts dotenv_config_path=.env.development",
     "build:clean": "rm -rf build",
     "build:server": "tsc",
     "build": "yarn build:clean && yarn build:server",

@@ -12,7 +12,7 @@ const config: JestConfigWithTsJest = {
   },
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': [
-      '<rootDir>/node_modules/ts-jest',
+      '<rootDir>/../node_modules/ts-jest',
       { "useESM": true }
     ],
   },
