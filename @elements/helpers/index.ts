@@ -1,3 +1,2 @@
-export function sayFoo() {
-  return 'Foo'
-}
+export * from './date/index.js';
+export * from './data/index.js';

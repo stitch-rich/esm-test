@@ -1,8 +1,7 @@
 import { franc } from 'franc';
 import { DocumentNode } from 'graphql';
 import {gql} from 'graphql-tag';
-import {sayDate} from "@elements/helpers/date/index.js";
-import {sayCountry} from "@elements/helpers/data/index.js";
+import {sayDate, sayCountry} from "@elements/helpers";
 
 // HELPERS
 import { Resolver } from './_baseResolver.js';

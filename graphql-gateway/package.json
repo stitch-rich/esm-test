@@ -13,7 +13,7 @@
     "build:clean": "rm -rf build",
     "build:server": "tsc",
     "build": "yarn build:clean && yarn build:server",
-    "serve": "node server.js",
+    "serve": "NODE_OPTIONS=--experimental-vm-modules node server.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --verbose",
     "test:cover": "jest --verbose --coverage",
     "test:watch": "jest --verbose --watch --notify",

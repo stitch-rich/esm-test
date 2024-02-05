@@ -1,4 +1,4 @@
-import { sayCountry } from ".";
+import { sayCountry } from "./index.js";
 
 describe('say country', () => {
   it('can say foo', () => {
