@@ -1,5 +1,5 @@
 {
-  "name": "esm-test",
+  "name": "graphql-gateway",
   "version": "1.0.0",
   "author": "Stitch",
   "main": "build/server.js",

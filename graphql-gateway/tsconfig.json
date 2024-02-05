@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "outDir": "./build",
+    "lib": [
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "sourceMap": true,
+    "inlineSources": true,
+
+    // Sentry has an easier job of grouping issues if the source path prefix is removed from generated sources.
+    "sourceRoot": "/graphql-gateway/"
+  },
+  "include": [
+    "./src",
+    "./test",
+    "jest.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ],
+  "ts-node": {
+    "esm": true
+  },
+}

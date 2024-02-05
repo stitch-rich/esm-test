@@ -1,0 +1,8 @@
+{
+  "name": "trialmap",
+  "private": true,
+  "workspaces": [
+    "@elements/helpers",
+    "graphql-gateway"
+  ]
+}
