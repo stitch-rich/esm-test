@@ -16,7 +16,7 @@
     "serve": "NODE_OPTIONS=--experimental-vm-modules node server.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --verbose",
     "test:cover": "jest --verbose --coverage",
-    "test:watch": "jest --verbose --watch --notify",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --verbose --watch --notify",
     "lint": "eslint './src/**/*'",
     "lint:fix": "eslint './src/**/*' --fix"
   },

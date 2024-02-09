@@ -1,14 +1,24 @@
+import {jest} from '@jest/globals';
 import { DateTime } from 'luxon';
+
+const francMock = jest.fn().mockImplementation(() => 'foo')
+
+jest.unstable_mockModule('franc', () => ({
+  franc: francMock,
+}));
+
+
 // Resolver
-import { Language } from './language.js';
+const { Language } = await import('./language.js');
 
 describe('Language resolvers', () => {
-  it('should resolve speak query as expected', () => {
+  it.only('should resolve speak query as expected', () => {
     const text = 'This is my message';
     const output = Language.query.speak(null, { text })
+    expect(francMock).toHaveBeenCalledTimes(1);
     expect(output).toEqual({
       message: text,
-      language: 'eng'
+      language: 'foo'
     });
   });
   it('should resolve speak_date query as expected', () => {
