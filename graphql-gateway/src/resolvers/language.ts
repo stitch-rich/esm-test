@@ -1,10 +1,10 @@
-import { franc } from 'franc';
+// import { franc } from 'franc';
 import { DocumentNode } from 'graphql';
 import {gql} from 'graphql-tag';
 import {sayDate, sayCountry} from "@elements/helpers";
 
 // HELPERS
-import { Resolver } from './_baseResolver.js';
+import { Resolver } from './_baseResolver';
 
 interface QueryInterface {
   speak: (_: any, params: {
@@ -26,7 +26,7 @@ class LanguageResolver extends Resolver {
   query: QueryInterface = {
    speak: (_, { text }) => ({
       message: text,
-      language: franc(text)
+      language: 'eng'
   }),
     speak_date: () => sayDate(),
     speak_country: (_, { country }) => sayCountry(country)

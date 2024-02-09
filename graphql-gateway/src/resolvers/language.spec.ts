@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
 // Resolver
-import { Language } from './language.js';
+import { Language } from './language';
 
 describe('Language resolvers', () => {
   it('should resolve speak query as expected', () => {

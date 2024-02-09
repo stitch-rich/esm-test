@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES6",
     "outDir": "./lib",
     "lib": [
       "dom",
@@ -14,8 +14,8 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "sourceMap": true,
@@ -32,8 +32,5 @@
     "**/*.spec.ts",
     "jest.config.ts",
     "jest.setup.ts"
-  ],
-  "ts-node": {
-    "esm": true
-  },
+  ]
 }

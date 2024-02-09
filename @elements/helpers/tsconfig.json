@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -13,8 +13,8 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "sourceMap": true,
@@ -23,12 +23,5 @@
     // Sentry has an easier job of grouping issues if the source path prefix is removed from generated sources.
     "sourceRoot": "/@elements/helpers/"
   },
-  "include": ["**/*.ts"],
-  "exclude": [
-    "node_modules",
-    "lib"
-  ],
-  "ts-node": {
-    "esm": true
-  },
+  "include": ["**/*.ts"]
 }

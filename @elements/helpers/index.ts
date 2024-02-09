@@ -1,2 +1,2 @@
-export * from './date/index.js';
-export * from './data/index.js';
+export * from './date';
+export * from './data';

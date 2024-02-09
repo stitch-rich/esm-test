@@ -1,4 +1,4 @@
-import { find } from 'lodash-es';
+import { find } from 'lodash';
 
 const countries = [{ id: 'foo', name: 'FOO'}, { id: 'bar', name: 'BAR'}, { id: 'baz', name: 'BAZ'}]
 

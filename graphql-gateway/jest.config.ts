@@ -6,15 +6,8 @@ const config: JestConfigWithTsJest = {
   setupFiles: [
     '<rootDir>/jest.setup.js',
   ],
-  extensionsToTreatAsEsm: [".ts"],
-  moduleNameMapper: {
-    '^(\\.{1,2}/.*)\\.js$': '$1',
-  },
   transform: {
-    '^.+\\.(js|jsx|ts|tsx)$': [
-      '<rootDir>/../node_modules/ts-jest',
-      { "useESM": true }
-    ],
+    '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/../node_modules/ts-jest',
   },
   testPathIgnorePatterns: [
     'node_modules',
